@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('./assets/R\ \(1\).jpeg');
+    background-size: cover;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #d81920;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo img {
+    width: 100px;
+    margin-bottom: 0.5rem;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #ffc107;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.dropdown-menu li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: #333;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #d81920;
+    color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 4rem 1rem;
+    color: rgb(12, 8, 8);
+    background-blend-mode: darken;
+}
+
+.hero h1 {
+    color: rgb(249, 2, 2);
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    color: #d81920;
+}
+
+section p {
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.player-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.player-card img {
+    width: 150px;
+    height: 150px;
+}
+
+.player-card h3 {
+    padding: 0.5rem;
+    background-color: #d81920;
+    color: white;
+    margin: 0;
+}
+
+footer {
+    background-color: #d81920; /* Warna merah */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative; /* Agar tetap terlihat meskipun konten sedikit */
+    bottom: 0;
+    width: 100%;
+}
